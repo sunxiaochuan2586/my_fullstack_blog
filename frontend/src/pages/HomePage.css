@@ -1,0 +1,44 @@
+.page-container {
+    /* 使用 Bootstrap 的 container 效果，但自己控制宽度 */
+    max-width: 1140px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.main-content {
+    flex: 3; /* 主内容区占 3 份宽度 */
+    min-width: 0; /* 防止内容过长时撑破布局 */
+}
+
+.sidebar {
+    flex: 1; /* 侧边栏占 1 份宽度 */
+    min-width: 0;
+    position: sticky;
+    top: 100px; /* 留出导航栏的高度，避免遮挡 */
+}
+
+/* 侧边栏小部件的基本样式 */
+.sidebar-widget {
+    margin-bottom: 2.5rem;
+}
+
+.sidebar-widget-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.sidebar-widget p, .sidebar-widget ul {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.sidebar-widget ul {
+    list-style: none;
+    padding: 0;
+}
